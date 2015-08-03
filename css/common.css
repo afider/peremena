@@ -715,8 +715,13 @@ textarea {
 /* slogan */
 /* --------------------------------------------- */
 .slogan {
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+.slogan__big {
+  font-size: 54px;
+  font-size: 5.4rem;
 }
 
 /* slogan */
