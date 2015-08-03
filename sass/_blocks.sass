@@ -1,0 +1,170 @@
+
+
+/* clearfix
+/* --------------------------------------------- */
+
+
+%clear
+	&:before,
+	&:after
+		display: table
+		content: ''
+		clear: both
+	&:after
+		clear: both
+
+.clearfix-block
+	clear: both
+	overflow: hidden
+	margin: 0
+	padding: 0
+	font-size: 0
+	line-height: 0
+
+.clearfix 
+	&:before,
+	&:after
+		display: table
+		content: ''
+		clear: both
+	&:after
+		clear: both
+
+
+/* clearfix
+/* ---------------------------------------END--- */
+
+
+/* centered
+/* --------------------------------------------- */
+
+.centered
+	margin: auto
+	width: $page_w
+	+box-sizing(border-box)
+
+/* centered
+/* ---------------------------------------END--- */
+
+
+/* page
+/* --------------------------------------------- */
+
+.page
+
+	position: relative
+	min-height: 100%
+	width: 100%
+	min-width: $page_w_min
+
+	&__header
+		//background: #adf785
+		height: 173px
+
+	&__body
+		
+
+	&__footer
+		position: relative
+		background: #f1acf2
+	
+/* page
+/* ---------------------------------------END--- */
+
+
+/* logo
+/* --------------------------------------------- */
+
+.logo
+	display: block
+	position: absolute
+	width: 387px
+	height: 73px
+	border-bottom: none
+	top: 48px
+	left: 50%
+	margin-left: - (387px / 2)
+
+	&__img
+		display: block
+
+	
+/* logo
+/* ---------------------------------------END--- */
+
+
+/* table
+/* --------------------------------------------- */
+
+.table 
+	margin-bottom: 20px
+	width: 100%
+	border: 2px solid #e9ecee
+
+	&__h td,
+	& th 
+		font-size: 13px
+		font-weight: bold
+		color: #888
+		background: #e9ecee
+
+	& th,
+	& td
+		padding: 10px 14px
+		border-bottom: 1px solid #e9ecee
+
+	&__line
+		background: #f6f6f6
+
+	
+/* table
+/* ---------------------------------------END--- */
+
+
+/* menu
+/* --------------------------------------------- */
+
+.menu
+	background: url("../img/bg.jpg") center 0 no-repeat
+	color: #fff
+	padding: 0 0 24px 0
+
+	&__body
+		background: url("../img/menu.png") 0 0 no-repeat
+		padding: 13px
+
+	&__panel
+		position: relative
+		
+		&:before,
+		&:after
+			display: table
+			content: ''
+			clear: both
+		&:after
+			clear: both
+
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			border: 1px solid #fff
+			opacity: .3
+
+/* menu
+/* ---------------------------------------END--- */
+
+
+/* slogan
+/* --------------------------------------------- */
+
+.slogan
+	@extend %font-2
+	+rem(font-size, 24px)
+
+/* slogan
+/* ---------------------------------------END--- */
