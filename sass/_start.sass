@@ -4,7 +4,9 @@ html
 body
 	background: #fff
 	color: $text_color
-	font: normal 14px/1.78 $font_main
+	+rem(font-size, 14px)
+	line-height: 1.5
+	font-family: $font_main
 
 
 p
@@ -35,19 +37,20 @@ ol li
 /*  -------------------------------------------- */
 
 #{headings(1, 6)}
-	margin: 35px 0 20px 0
+	margin: 32px 0 20px 0
 	padding: 0
 	line-height: 1.2
 	font-weight: normal
+	@extend %font-2
 
 #{headings(1, 1)}
-	font-size: 30px
+	+rem(font-size, 56px)
 	margin-bottom: 30px
 	margin-top: 0
 
 
 #{headings(2, 2)}
-	font-size: 20px
+	+rem(font-size, 46px)
 	margin-bottom: 35px
 
 #{headings(3, 6)}
