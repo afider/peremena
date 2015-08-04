@@ -404,8 +404,15 @@
 		top: 0
 		left: 50%
 		margin-left: - image-width( sprite-path("separator") )/2
-
 		+sprite-icon("separator")
+
+	&_size_sm
+		height: image-height( sprite-path("separator_sm") )
+		margin-bottom: 18px
+
+		&:before
+			margin-left: - image-width( sprite-path("separator_sm") )/2
+			+sprite-icon("separator_sm")
 
 /* separator
 /* ---------------------------------------END--- */
@@ -500,4 +507,97 @@
 
 
 /* table-cols
+/* ---------------------------------------END--- */
+
+
+/* map
+/* --------------------------------------------- */
+
+.map
+	overflow: hidden
+	+rem(font-size, 13px)
+	background: #cfdfa9
+	
+	&__body
+		position: relative
+
+	&__h
+		@extend %font-2
+		+rem(font-size, 34px)
+		text-align: center
+		
+
+	&__panel
+		position: absolute
+		top: 133px
+		left: 0
+		z-index: 100
+		width: 354px
+		border: 6px solid #ae584e
+		background: url("../img/map-trans.png") center 0 no-repeat
+
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			top: -200px
+			margin-top: 12px
+			margin-left: -1px
+			left: 50%
+			width: 1px
+			height: 200px
+			background: #ae584e
+			z-index: 101
+
+	&__panel-body
+		position: relative
+		z-index: 2
+		margin: 22px 17px 17px 17px
+		@include box-sizing(border-box)
+
+
+
+	&__contacts
+		display: table-cell
+		vertical-align: top
+
+	&__trans
+		position: absolute
+		top: 22px
+		right: 0
+		bottom: 0
+		left: 0
+		background: rgba(#fff, .5)
+
+/* map
+/* ---------------------------------------END--- */
+
+/* prop
+/* --------------------------------------------- */
+
+.prop
+	display: table
+	margin-bottom: 8px
+
+	&__h,
+	&__val
+		display: table-cell
+		vertical-align: top
+
+	&__h
+		white-space: nowrap
+		padding-right: 7px
+
+
+/* prop
+/* ---------------------------------------END--- */
+
+
+/* txt-bigger
+/* --------------------------------------------- */
+
+.txt-bigger
+	+rem(font-size, 15px)
+
+/* txt-bigger
 /* ---------------------------------------END--- */

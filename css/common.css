@@ -477,8 +477,8 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Semibold.eot");
-  src: url("../fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Semibold.woff") format("woff"), url("../fonts/OpenSans-Semibold.ttf") format("truetype");
+  src: url("../fonts/opensans-bold.eot");
+  src: url("../fonts/opensans-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold.woff") format("woff"), url("../fonts/opensans-bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -491,8 +491,8 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/OpenSans-SemiboldItalic.eot");
-  src: url("../fonts/OpenSans-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-SemiboldItalic.woff") format("woff"), url("../fonts/OpenSans-SemiboldItalic.ttf") format("truetype");
+  src: url("../fonts/opensans-bolditalic.eot");
+  src: url("../fonts/opensans-bolditalic.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bolditalic.woff") format("woff"), url("../fonts/opensans-bolditalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
@@ -503,7 +503,7 @@ h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: normal;
   font-style: normal;
 }
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .font-2, .slogan, .menu-table__h, .menu-table__legend-h, .teasers, .decor-header {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .font-2, .slogan, .menu-table__h, .menu-table__legend-h, .teasers, .decor-header, .map__h {
   font-family: "Betina Script", "Open Sans", Arial, Tahoma, Verdana, sans-serif;
 }
 
@@ -973,6 +973,16 @@ textarea {
   width: 160px;
   height: 8px;
 }
+.separator_size_sm {
+  height: 6px;
+  margin-bottom: 18px;
+}
+.separator_size_sm:before {
+  margin-left: -60.5px;
+  background: url('../img/icons-s61ff71aa46.png') 0 -867px no-repeat;
+  width: 121px;
+  height: 6px;
+}
 
 /* separator */
 /* ---------------------------------------END--- */
@@ -1059,6 +1069,93 @@ textarea {
 }
 
 /* table-cols */
+/* ---------------------------------------END--- */
+/* map */
+/* --------------------------------------------- */
+.map {
+  overflow: hidden;
+  font-size: 13px;
+  font-size: 1.3rem;
+  background: #cfdfa9;
+}
+.map__body {
+  position: relative;
+}
+.map__h {
+  font-size: 34px;
+  font-size: 3.4rem;
+  text-align: center;
+}
+.map__panel {
+  position: absolute;
+  top: 133px;
+  left: 0;
+  z-index: 100;
+  width: 354px;
+  border: 6px solid #ae584e;
+  background: url("../img/map-trans.png") center 0 no-repeat;
+}
+.map__panel:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -200px;
+  margin-top: 12px;
+  margin-left: -1px;
+  left: 50%;
+  width: 1px;
+  height: 200px;
+  background: #ae584e;
+  z-index: 101;
+}
+.map__panel-body {
+  position: relative;
+  z-index: 2;
+  margin: 22px 17px 17px 17px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.map__contacts {
+  display: table-cell;
+  vertical-align: top;
+}
+.map__trans {
+  position: absolute;
+  top: 22px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* map */
+/* ---------------------------------------END--- */
+/* prop */
+/* --------------------------------------------- */
+.prop {
+  display: table;
+  margin-bottom: 8px;
+}
+.prop__h, .prop__val {
+  display: table-cell;
+  vertical-align: top;
+}
+.prop__h {
+  white-space: nowrap;
+  padding-right: 7px;
+}
+
+/* prop */
+/* ---------------------------------------END--- */
+/* txt-bigger */
+/* --------------------------------------------- */
+.txt-bigger {
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+
+/* txt-bigger */
 /* ---------------------------------------END--- */
 
 
