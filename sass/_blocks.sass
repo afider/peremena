@@ -136,27 +136,36 @@
 	color: #fff
 	padding: 0 0 24px 0
 
+	&__section
+		border: 1px solid rgba(#fff, .2)
+		//background: yellow
+		padding: 13px 20px 30px 30px
+		margin-bottom: 15px
+
+		&:last-child
+			margin-bottom: 0
+
 	&__body
 		background: url("../img/menu.png") 0 0 repeat
-		padding: 13px 40px 40px 40px
+		padding: 15px
 		position: relative
 
-		&:before
-			content: ''
-			display: block
-			position: absolute
-			top: 10px
-			right: 10px
-			bottom: 10px
-			left: 10px
-			border: 1px solid #fff
-			+opacity(.3)
+		// &:before
+		// 	content: ''
+		// 	display: block
+		// 	position: absolute
+		// 	top: 10px
+		// 	right: 10px
+		// 	bottom: 10px
+		// 	left: 10px
+		// 	border: 1px solid #fff
+		// 	+opacity(.3)
 
 		&:after
 			content: ''
 			display: block
 			position: absolute
-			top: 1px
+			top: 5px
 			left: 50px
 			+sprite-icon("kitchenware")
 
@@ -231,7 +240,10 @@
 
 		td
 			padding-top: 8px
-			//padding-bottom: 8px
+			padding-bottom: 0
+
+	&__sub-h
+		+rem(font-size, 37px)
 
 	&__img-cutting-board
 		position: relative
@@ -324,22 +336,35 @@
 	&__number
 		font-family: Georgia, $font_main
 		+rem(font-size, 20px)
+		vertical-align: top
+		white-space: nowrap
 
 		&_tp_price
 			color: #AE584E
+			font-weight: bold
 
 		&_tp_weight
 			width: 104px
 
-	&__name
+
+
+	& &__name
 		width: 468px
 		font-style: italic
+		+rem(font-size, 16px)
+		padding-bottom: 18px
+
 
 	&__right
 		text-align: right
 
 	&__center
 		text-align: center
+
+	&__description
+		+rem(font-size, 14px)
+		padding-top: 3px
+		+opacity(.7)
 			
 			
 
